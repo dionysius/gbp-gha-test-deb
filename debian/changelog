@@ -1,3 +1,9 @@
+gbp-gha-test (0.4.7) unstable; urgency=medium
+
+  * publish release
+
+ -- dionysius <dragon.dionysius@gmail.com>  Thu, 05 Feb 2026 06:05:04 +0100
+
 gbp-gha-test (0.4.6) unstable; urgency=medium
 
   * add also arch package, so full matrix is built
