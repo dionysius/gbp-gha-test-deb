@@ -1,3 +1,9 @@
+gbp-gha-test (0.4.0) unstable; urgency=medium
+
+  * update workflow
+
+ -- dionysius <dragon.dionysius@gmail.com>  Thu, 05 Feb 2026 04:44:07 +0100
+
 gbp-gha-test (0.3.3) unstable; urgency=medium
 
   * test artifact upload and download action in v4
