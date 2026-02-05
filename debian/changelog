@@ -1,3 +1,9 @@
+gbp-gha-test (0.4.4) unstable; urgency=medium
+
+  * update, order by primary architecture, don't build on secondary and no random order
+
+ -- dionysius <dragon.dionysius@gmail.com>  Thu, 05 Feb 2026 05:15:38 +0100
+
 gbp-gha-test (0.4.3) unstable; urgency=medium
 
   * update, still have only a all package, should now allow to build
