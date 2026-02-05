@@ -27,3 +27,5 @@ jobs:
     if: startsWith(github.event.ref, 'refs/tags/debian')
     needs: [build-native]
     uses: dionysius/gbp-gha/.github/workflows/release.yml@devel
+    with:
+      publish: true
