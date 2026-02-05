@@ -19,17 +19,11 @@ jobs:
       DEBFULLNAME: dionysius (github-actions)
       DEBEMAIL: dragon.dionysius+gha@gmail.com
       before_build_deps_install: ""
+      distros: '["ubuntu:latest", "ubuntu:rolling", "debian:stable", "debian:oldstable"]'
+      architectures: '["amd64", "arm64"]'
     secrets:
       GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
   release:
     if: startsWith(github.event.ref, 'refs/tags/debian')
     needs: [build-native]
     uses: dionysius/gbp-gha/.github/workflows/release.yml@devel
-  upload:
-    if: startsWith(github.event.ref, 'refs/tags/debian')
-    needs: [build-native]
-    uses: dionysius/gbp-gha/.github/workflows/upload-packagecloud.yml@devel
-    with:
-      USERREPO: dionysius/test
-    secrets:
-      PACKAGECLOUD_TOKEN: ${{ secrets.PACKAGECLOUD_TOKEN }}
