@@ -9,12 +9,23 @@ Vcs-Browser: https://github.com/dionysius/gbp-gha-test
 Homepage: https://github.com/dionysius/gbp-gha-test
 Rules-Requires-Root: no
 
-Package: gbp-gha-test
+Package: gbp-gha-indep
 Architecture: all
 Depends: ${misc:Depends},
          ${shlibs:Depends}
 Built-Using: ${misc:Built-Using}
-Description: Test package for the github actions workflow
+Description: Test package for the github actions workflow, arch independent
+ Small test package to test and develop the gibhub actions workflow which are
+ based on git-buildpackage.
+ .
+ This package contains nothing
+
+Package: gbp-gha-arch
+Architecture: any
+Depends: ${misc:Depends},
+            ${shlibs:Depends}
+Built-Using: ${misc:Built-Using}
+Description: Test package for the github actions workflow, arch dependent
  Small test package to test and develop the gibhub actions workflow which are
  based on git-buildpackage.
  .
