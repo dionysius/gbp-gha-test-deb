@@ -19,7 +19,7 @@ jobs:
       DEBFULLNAME: dionysius (github-actions)
       DEBEMAIL: dragon.dionysius+gha@gmail.com
       before_build_deps_install: ""
-      distros: '["ubuntu:latest", "ubuntu:rolling", "debian:stable", "debian:oldstable"]'
+      images: '["ubuntu:latest", "ubuntu:rolling", "debian:stable", "debian:oldstable"]'
       architectures: '["amd64", "arm64"]'
     secrets:
       GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
