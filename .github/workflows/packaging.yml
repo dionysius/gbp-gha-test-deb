@@ -14,6 +14,8 @@ jobs:
 
   build-native:
     uses: dionysius/gbp-gha/.github/workflows/gbp-native.yml@devel
+    secrets:
+      GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
     with:
       # https://github.com/orgs/community/discussions/26671
       DEBFULLNAME: dionysius (github-actions)
@@ -21,8 +23,7 @@ jobs:
       before_build_deps_install: ""
       images: '["ubuntu:latest", "ubuntu:rolling", "debian:stable", "debian:oldstable"]'
       architectures: '["amd64", "arm64"]'
-    secrets:
-      GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+
   release:
     if: startsWith(github.event.ref, 'refs/tags/debian')
     needs: [build-native]
@@ -30,3 +31,9 @@ jobs:
     with:
       publish: true
       prerelease: true
+
+  promote:
+    uses: dionysius/gbp-gha/.github/workflows/promote-release.yml@devel
+    with:
+      after_days: 0
+      release_pattern: '{debian/*.*}.*'
