@@ -1,3 +1,9 @@
+gbp-gha-test (0.6.2) unstable; urgency=medium
+
+  * with env vars
+
+ -- dionysius <dragon.dionysius@gmail.com>  Mon, 09 Feb 2026 17:19:17 +0100
+
 gbp-gha-test (0.6.1) unstable; urgency=medium
 
   * debug
