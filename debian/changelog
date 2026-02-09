@@ -1,3 +1,9 @@
+gbp-gha-test (0.6.4) unstable; urgency=medium
+
+  * test latest legacy
+
+ -- dionysius <dragon.dionysius@gmail.com>  Mon, 09 Feb 2026 17:44:00 +0100
+
 gbp-gha-test (0.6.3) unstable; urgency=medium
 
   * now publish instantly
