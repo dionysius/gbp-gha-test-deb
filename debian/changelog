@@ -1,3 +1,9 @@
+gbp-gha-test (0.6.3) unstable; urgency=medium
+
+  * now publish instantly
+
+ -- dionysius <dragon.dionysius@gmail.com>  Mon, 09 Feb 2026 17:28:54 +0100
+
 gbp-gha-test (0.6.2) unstable; urgency=medium
 
   * with env vars
