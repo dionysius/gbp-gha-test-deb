@@ -1,3 +1,9 @@
+gbp-gha-test (0.5.1) unstable; urgency=medium
+
+  * add promote to workflow
+
+ -- dionysius <dragon.dionysius@gmail.com>  Mon, 09 Feb 2026 14:01:27 +0100
+
 gbp-gha-test (0.5.0) unstable; urgency=medium
 
   * update workflow
