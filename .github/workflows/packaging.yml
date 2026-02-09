@@ -29,3 +29,4 @@ jobs:
     uses: dionysius/gbp-gha/.github/workflows/release.yml@devel
     with:
       publish: true
+      prerelease: true
