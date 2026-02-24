@@ -1,3 +1,9 @@
+gbp-gha-test (0.7.3) unstable; urgency=medium
+
+  * ubuntu ports for cross-building
+
+ -- dionysius <dragon.dionysius@gmail.com>  Tue, 24 Feb 2026 15:41:51 +0100
+
 gbp-gha-test (0.7.2) unstable; urgency=medium
 
   * crossbuild-essential detection
