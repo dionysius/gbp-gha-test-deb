@@ -12,8 +12,8 @@ concurrency:
 
 jobs:
 
-  build-native:
-    uses: dionysius/gbp-gha/.github/workflows/gbp-native.yml@devel
+  build:
+    uses: dionysius/gbp-gha/.github/workflows/build.yml@devel
     secrets:
       GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
     with:
@@ -22,11 +22,11 @@ jobs:
       DEBEMAIL: dragon.dionysius+gha@gmail.com
       before_build_deps_install: ""
       images: '["ubuntu:latest", "ubuntu:rolling", "debian:stable", "debian:oldstable"]'
-      architectures: '["amd64", "arm64"]'
+      architectures: '["amd64", "arm64", "riscv64"]'
 
   release:
     if: startsWith(github.event.ref, 'refs/tags/debian')
-    needs: [build-native]
+    needs: [build]
     uses: dionysius/gbp-gha/.github/workflows/release.yml@devel
     with:
       publish: true
