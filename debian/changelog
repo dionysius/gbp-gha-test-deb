@@ -1,3 +1,9 @@
+gbp-gha-test (0.7.8) unstable; urgency=medium
+
+  * restrict arch in sources in ubuntu
+
+ -- dionysius <dragon.dionysius@gmail.com>  Tue, 24 Feb 2026 17:23:11 +0100
+
 gbp-gha-test (0.7.7) unstable; urgency=medium
 
   * allow skip
