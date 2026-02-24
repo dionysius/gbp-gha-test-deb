@@ -1,3 +1,9 @@
+gbp-gha-test (0.7.4) unstable; urgency=medium
+
+  * host-arch
+
+ -- dionysius <dragon.dionysius@gmail.com>  Tue, 24 Feb 2026 15:55:07 +0100
+
 gbp-gha-test (0.7.3) unstable; urgency=medium
 
   * ubuntu ports for cross-building
