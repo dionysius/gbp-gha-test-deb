@@ -21,7 +21,7 @@ jobs:
       DEBFULLNAME: dionysius (github-actions)
       DEBEMAIL: dragon.dionysius+gha@gmail.com
       before_build_deps_install: ""
-      images: '["ubuntu:latest", "ubuntu:rolling", "debian:stable", "debian:oldstable"]'
+      images: '["ubuntu:latest", "ubuntu:rolling", "ubuntu:oldlts", "debian:stable", "debian:oldstable"]'
       architectures: '["amd64", "arm64", "riscv64"]'
 
   release:
