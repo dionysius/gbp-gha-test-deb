@@ -1,3 +1,9 @@
+gbp-gha-test (0.8.0) unstable; urgency=medium
+
+  * include and test ubuntu:oldlts in pipeline
+
+ -- dionysius <dragon.dionysius@gmail.com>  Fri, 10 Apr 2026 23:12:50 +0200
+
 gbp-gha-test (0.7.8) unstable; urgency=medium
 
   * restrict arch in sources in ubuntu
