@@ -1,3 +1,9 @@
+gbp-gha-test (0.9.0) unstable; urgency=medium
+
+  * test dockside
+
+ -- dionysius <dragon.dionysius@gmail.com>  Fri, 05 Jun 2026 14:27:09 +0200
+
 gbp-gha-test (0.8.0) unstable; urgency=medium
 
   * include and test ubuntu:oldlts in pipeline
